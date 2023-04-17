@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Edit Contact{% endblock %}
+
+
+{% block body %}
+   <h1>Edit Contact</h1>
+
+<div class="formulaire_edit">
+   {{ form_start(form) }}
+       {{ form_row(form.nom) }}
+       {{ form_row(form.email) }}
+       <div id="essai">
+       {{ form_row(form.message) }}
+       </div>
+       <button type="submit" class="enregistrer">Enregistrer</button>
+   {{ form_end(form) }}
+   </div>
+
+
+{% endblock %}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>First Travel</title>
+        <link rel="icon" href="img/logo.ico">
+        <link rel="stylesheet" href="{{ asset('/css/destinations.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/algerie.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/japon.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/maroc.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/senegal.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/korea.css')}}"> 
+        <link rel="stylesheet" href="{{ asset('/css/contact.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/thailande.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/societe.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/societejp.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/societedz.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/fetejp.css')}}"> 
+        <link rel="stylesheet" href="{{ asset('/css/omotenashi.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/style.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/omiyage.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/fetedz.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/mdvsahara.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/amazigh.css')}}">
+        <link rel="stylesheet" href="{{ asset('/css/newsletter.css')}}">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+        <a href="/home/"><img src="img/logo.png" alt="" class="logo"></a>
+        
+        <div class="titre">
+            <p class="first">First Travel</p> 
+            <p class="accroche">"Parfois je ferme les yeux et je m'imagine avoir fait le tour du monde"</p> 
+        </div>
+        
+        
+    </header>
+    <nav>
+    <div class="menu">
+            <a href="/destinations/">Destinations</a>
+            <a href="/societe/">Sociétés et cultures</a>
+            <a href="/contact/">Me contacter</a>
+            <a href="/apropos/">A propos</a>
+            
+        </div>
+        
+    </nav>
+    <img src="img/menuburger.png" alt="" class="burger">
+    <div class="slide">
+        <a href="/destinations/">Destinations</a> 
+        <a href="/societe/">Sociétés et culture</a> 
+        <a href="/contact/">Me contacter</a> 
+        <a href="/apropos/">A propos</a> 
+        <button class="close">x</button>
+    </div>
+        {% block body %}{% endblock %}
+        <script src="js/jquery.js"></script>
+    
+    <script src="js/app.js"></script>
+    <script src="js/test.js"></script>
+    <button class="fleche"><img src="img/bouton_haut.png" alt="" class="bouton_haut"></button>
+
+    <footer class="footer">
+    <div id="footer">
+        <div class="first_travel">
+            <p>First Travel</p>
+            <a href="/apropos/" class="a">A propos</a>
+        </div>
+        <div class="ressources">
+            <p class="entete">Ressources</p>
+            <a href="/mentionslegales/">Mentions légales</a>
+            <a href="/politique/">Politique de confidentialité</a>
+            <a href="/utilisation/">Conditions d'utilisation</a>
+            <a href="/faq/">FAQ</a>
+            <a href="#">Cookies</a>
+            
+        </div>
+        
+        <div class="contact">
+            <p>Contact</p>
+            <div class="mail">
+            <a href="mailto:otirichine@gmail.com">Mail</a>
+            <a href="#" class="adresse">Adresse</a>
+            <a href="#" class="reseaux">Réseaux sociaux</a>
+                <div class="icone">
+                    <a href="#"><img src="img/mdi_instagram.png" alt=""></a>
+                    <a href="#"><img src="img/mdi_twitter.png" alt=""></a>
+                    <a href="#"><img src="img/mdi_youtube.png" alt=""></a>
+                    <a href="#"><img src="img/mdi_twitch.png" alt=""></a>
+                
+            
+                </div>
+            </div>
+        </div>    
+    </div> 
+        <div>
+        <h5 class="copyright">Copyright © First Travel</h5>
+        </div>
+    </footer>
+    </body>
+</html>

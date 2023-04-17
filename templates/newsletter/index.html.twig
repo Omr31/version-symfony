@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello NewsletterController!{% endblock %}
+
+{% block body %}
+<h1>Inscription à la Newsletter</h1>
+<hr>
+
+<form action="" method="post" class="essai">
+    <h2 id="titreinscr">Inscription</h2>
+    <input type="text" name="nomnews" class="nomnews" placeholder="Ton nom">
+    <input type="email" name="emailnews" id="emailnews" class="emailnews" placeholder="Exemple@exemple.fr">
+    <button type="submit" class="sinscrire">S'inscrire</button>
+</form>
+{% endblock %}
